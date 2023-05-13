@@ -50,68 +50,52 @@ SET default_table_access_method = heap;
 CREATE TABLE public.number_guess (
     username character varying(22) NOT NULL,
     games_played integer NOT NULL,
-    best_game integer NOT NULL,
-    user_id integer NOT NULL
+    best_game integer NOT NULL
 );
 
 
 ALTER TABLE public.number_guess OWNER TO freecodecamp;
 
 --
--- Name: number_guess_user_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
---
-
-CREATE SEQUENCE public.number_guess_user_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.number_guess_user_id_seq OWNER TO freecodecamp;
-
---
--- Name: number_guess_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
---
-
-ALTER SEQUENCE public.number_guess_user_id_seq OWNED BY public.number_guess.user_id;
-
-
---
--- Name: number_guess user_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
---
-
-ALTER TABLE ONLY public.number_guess ALTER COLUMN user_id SET DEFAULT nextval('public.number_guess_user_id_seq'::regclass);
-
-
---
 -- Data for Name: number_guess; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.number_guess VALUES ('user_1683882667424', 0, 0, 13);
-INSERT INTO public.number_guess VALUES ('user_1683882667423', 0, 0, 14);
-INSERT INTO public.number_guess VALUES ('user_1683882802351', 0, 0, 15);
-INSERT INTO public.number_guess VALUES ('user_1683882802350', 0, 0, 16);
-INSERT INTO public.number_guess VALUES ('Annie', 0, 3, 12);
-INSERT INTO public.number_guess VALUES ('q', 0, 1, 17);
-INSERT INTO public.number_guess VALUES ('user_1683884126890', 2, 29, 20);
-INSERT INTO public.number_guess VALUES ('user_1683884126891', 3, 42, 19);
-INSERT INTO public.number_guess VALUES ('user_1683884195350', 1, 393, 22);
-INSERT INTO public.number_guess VALUES ('user_1683884195351', 1, 628, 21);
-INSERT INTO public.number_guess VALUES ('annie', 3, 5, 18);
-INSERT INTO public.number_guess VALUES ('user_1683885291944', 0, 0, 24);
-INSERT INTO public.number_guess VALUES ('user_1683885291945', 2, 61, 23);
-INSERT INTO public.number_guess VALUES ('user_1683885510744', 2, 107, 26);
-INSERT INTO public.number_guess VALUES ('user_1683885510745', 2, 754, 25);
-
-
---
--- Name: number_guess_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
---
-
-SELECT pg_catalog.setval('public.number_guess_user_id_seq', 26, true);
+INSERT INTO public.number_guess VALUES ('user_1683900083747', 1, 678);
+INSERT INTO public.number_guess VALUES ('user_1683900083748', 1, 415);
+INSERT INTO public.number_guess VALUES ('user_1683903081961', 2, 411);
+INSERT INTO public.number_guess VALUES ('user_1683903081962', 4, 370);
+INSERT INTO public.number_guess VALUES ('cat', 1, 1);
+INSERT INTO public.number_guess VALUES ('dog', 2, 2);
+INSERT INTO public.number_guess VALUES ('user_1683903433616', 2, 451);
+INSERT INTO public.number_guess VALUES ('user_1683903433617', 4, 102);
+INSERT INTO public.number_guess VALUES ('user_1683941675326', 2, 623);
+INSERT INTO public.number_guess VALUES ('user_1683942796849', 1, 125);
+INSERT INTO public.number_guess VALUES ('user_1683941675327', 5, 140);
+INSERT INTO public.number_guess VALUES ('annie', 3, 4);
+INSERT INTO public.number_guess VALUES ('flower', 1, 5);
+INSERT INTO public.number_guess VALUES ('user_1683942860069', 2, 631);
+INSERT INTO public.number_guess VALUES ('user_1683942796850', 5, 475);
+INSERT INTO public.number_guess VALUES ('user_1683942432481', 2, 279);
+INSERT INTO public.number_guess VALUES ('user_1683942860070', 5, 224);
+INSERT INTO public.number_guess VALUES ('user_1683942432482', 4, 112);
+INSERT INTO public.number_guess VALUES ('user_1683942811687', 2, 541);
+INSERT INTO public.number_guess VALUES ('user_1683942750233', 1, 135);
+INSERT INTO public.number_guess VALUES ('user_1683942811688', 5, 107);
+INSERT INTO public.number_guess VALUES ('user_1683942750234', 5, 144);
+INSERT INTO public.number_guess VALUES ('user_1683942869643', 2, 83);
+INSERT INTO public.number_guess VALUES ('user_1683942769955', 2, 418);
+INSERT INTO public.number_guess VALUES ('user_1683942820169', 2, 448);
+INSERT INTO public.number_guess VALUES ('user_1683942769956', 4, 505);
+INSERT INTO public.number_guess VALUES ('user_1683942869644', 5, 168);
+INSERT INTO public.number_guess VALUES ('user_1683942820170', 5, 238);
+INSERT INTO public.number_guess VALUES ('user_1683942785767', 2, 503);
+INSERT INTO public.number_guess VALUES ('user_1683942785768', 4, 239);
+INSERT INTO public.number_guess VALUES ('user_1683942829973', 2, 304);
+INSERT INTO public.number_guess VALUES ('user_1683942829974', 5, 253);
+INSERT INTO public.number_guess VALUES ('user_1683942838831', 2, 456);
+INSERT INTO public.number_guess VALUES ('user_1683942838832', 5, 101);
+INSERT INTO public.number_guess VALUES ('user_1683942847729', 2, 206);
+INSERT INTO public.number_guess VALUES ('user_1683942847730', 4, 269);
 
 
 --
